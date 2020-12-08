@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA3056C2257F52A700AEA177 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = BA3056C1257F52A700AEA177 /* readme.md */; };
 		BAD2AD8E257E099900FD4001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AD8D257E099900FD4001 /* AppDelegate.swift */; };
 		BAD2AD90257E099900FD4001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AD8F257E099900FD4001 /* SceneDelegate.swift */; };
 		BAD2AD92257E099900FD4001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD2AD91257E099900FD4001 /* ViewController.swift */; };
 		BAD2AD95257E099900FD4001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD2AD93257E099900FD4001 /* Main.storyboard */; };
 		BAD2AD97257E099C00FD4001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD2AD96257E099C00FD4001 /* Assets.xcassets */; };
 		BAD2AD9A257E099C00FD4001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD2AD98257E099C00FD4001 /* LaunchScreen.storyboard */; };
+		BAD2ADB8257F253C00FD4001 /* KPOP.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAD2ADB7257F253C00FD4001 /* KPOP.mp3 */; };
+		BAD2ADBC257F258B00FD4001 /* JAZZ.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAD2ADBB257F258B00FD4001 /* JAZZ.mp3 */; };
+		BAD2ADBF257F25B300FD4001 /* CHILL.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BAD2ADBE257F25B300FD4001 /* CHILL.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA3056C1257F52A700AEA177 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		BAD2AD8A257E099900FD4001 /* Assets Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assets Exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD2AD8D257E099900FD4001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD2AD8F257E099900FD4001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		BAD2AD96257E099C00FD4001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD2AD99257E099C00FD4001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD2AD9B257E099C00FD4001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD2ADB7257F253C00FD4001 /* KPOP.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = KPOP.mp3; sourceTree = "<group>"; };
+		BAD2ADBB257F258B00FD4001 /* JAZZ.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = JAZZ.mp3; sourceTree = "<group>"; };
+		BAD2ADBE257F25B300FD4001 /* CHILL.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = CHILL.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		BAD2AD81257E099900FD4001 = {
 			isa = PBXGroup;
 			children = (
+				BA3056C1257F52A700AEA177 /* readme.md */,
 				BAD2AD8C257E099900FD4001 /* Assets Exercise */,
 				BAD2AD8B257E099900FD4001 /* Products */,
 			);
@@ -63,8 +72,19 @@
 				BAD2AD96257E099C00FD4001 /* Assets.xcassets */,
 				BAD2AD98257E099C00FD4001 /* LaunchScreen.storyboard */,
 				BAD2AD9B257E099C00FD4001 /* Info.plist */,
+				BAD2ADA6257F23CE00FD4001 /* Music */,
 			);
 			path = "Assets Exercise";
+			sourceTree = "<group>";
+		};
+		BAD2ADA6257F23CE00FD4001 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				BAD2ADB7257F253C00FD4001 /* KPOP.mp3 */,
+				BAD2ADBE257F25B300FD4001 /* CHILL.mp3 */,
+				BAD2ADBB257F258B00FD4001 /* JAZZ.mp3 */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +145,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD2AD9A257E099C00FD4001 /* LaunchScreen.storyboard in Resources */,
+				BAD2ADBC257F258B00FD4001 /* JAZZ.mp3 in Resources */,
 				BAD2AD97257E099C00FD4001 /* Assets.xcassets in Resources */,
 				BAD2AD95257E099900FD4001 /* Main.storyboard in Resources */,
+				BA3056C2257F52A700AEA177 /* readme.md in Resources */,
+				BAD2ADBF257F25B300FD4001 /* CHILL.mp3 in Resources */,
+				BAD2ADB8257F253C00FD4001 /* KPOP.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
