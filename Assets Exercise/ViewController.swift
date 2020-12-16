@@ -11,6 +11,7 @@ import AVFoundation
 class ViewController: UIViewController {
     
     @IBOutlet weak var albumImage: UIImageView!
+    
     @IBOutlet weak var firstButtonLabel: UIButton!
     
     var player: AVAudioPlayer?
@@ -18,7 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Sample image on load
-        albumImage.image = #imageLiteral(resourceName: "Sample")
+        
+        //albumImage.image = #imageLiteral(resourceName: "Sample")
+        
+        albumImage.image = UIImage(named: "Sample")
+    
     }
 
     @IBAction func KPopButton(_ sender: Any) {
@@ -36,19 +41,20 @@ class ViewController: UIViewController {
         changeImage(imageName: "CHILL")
     }
     
-    // Play Music
+    // MARK: Play Music
     func playMusic(musicName: String) {
         let path = Bundle.main.path(forResource: "\(musicName)", ofType: "mp3")!
         let url = URL(fileURLWithPath: path)
         do {
             player = try AVAudioPlayer(contentsOf: url)
             player?.play()
+            print("Now playing \(musicName)")
         } catch {
-            print("Error")
+            print("Error playing \(musicName)")
         }
     }
     
-    // Change Image with dissolve transition
+    // MARK: Change Image with dissolve transition
     func changeImage(imageName: String) {
         UIView.transition(with: albumImage, duration: 0.7, options: .transitionCrossDissolve, animations: {
             self.albumImage.image = UIImage(named: "\(imageName)")
